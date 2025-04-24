@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio - Roland Szucs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+     <!-- TITLE -->
+    <header>
+         <div class="title">
+            <h1>Personal Portfolio</h1><br>
+            <h2>Roland Szucs</h2>
+         </div>        
+         
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- MAIN -->
+    <main>
+
+        <!-- ABOUT ME -->
+        <section id="about-me">
+            <h2 class=subtitle>About Me</h2>
+
+        <!-- LOGO (a pic about me)-->
+        <img src="/pics/Screenshot 2025-02-13 at 11.08.44 AM.png" alt="A photo about Roland" id="logo">
+
+                <p>Hi! I'm Roland, a frontend engineer from Hungary. Welcome to my personal portfolio website!</p>
+                <br>
+                <p id="coding-time"></p>
+                    <p>I’ve always loved creating and building things, which is one of the main reasons I started programming.<br>
+                    Another big reason is the flexibility: coding allows me to work fully remotely, so I can travel the world and pursue my passion for outdoor adventures like hiking, skiing, and kayaking.</p>
+                   <br>
+                   <p>Over the years, I’ve explored various business ideas—and I might explore more in the future—but for now, I feel like I’ve finally found something I truly enjoy and want to pursue professionally:</p>
+                   <p><em>Frontend development.</em></p>
+                   <br>
+                <p>Feel free to browse the site to check out my current projects and the skills I’m working on.</p>
+                    <p>I update everything regularly, so stay tuned for more!.</p>
+        </section>
+        <hr>
+
+        <!-- PORTFOLIO -->
+         <section id="portfolio">
+            <h2 class=subtitle>Portfolio</h2>
+            <p>Here you can find the portfolio of my projects.</p>
+            <img src="/pics/el tacito logo.png" alt="El tacito club" title="El tacito club">
+            <img src="/pics/dmt logo.png" alt="Daily Mood Tracker" title="Daily Mood Tracker">
+        </section>
+        <hr>
+
+        <!-- SKILLS -->
+          <section id="skills">
+            <h2 class=subtitle>Skills</h2>
+            <p>Here there will be icons of my skills which if will be clicked there will be a description about them.</p>
+            <p>Click on each to see the details.</p>
+                <img src="/pics/html logo png.png">
+                <img src="/pics/css logo png.png">
+                <img src="/pics/js logo.png">
+                <img src="pics/git logo.png">
+                <img src="/pics/github logo.png">
+                <img src="/pics/command line.jpg">
+          </section>
+          <hr>
+
+        <!-- CONTACT -->  
+         <section id="contact">
+            <h2 class=subtitle class="">Contact</h2>
+            <form action="#" method="post">
+                <!-- Name -->
+                <label for="name">Your Name</label><br>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  pattern="^[A-Za-z\s]{2,30}$" 
+                  title="Please enter 2-30 letters only."><br><br>
+              
+                <!-- Email -->
+                <label for="email">Your Email</label><br>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" 
+                  title="Please enter a valid email address."><br><br>
+              
+                <!-- Message -->
+                <label for="message">Message</label><br>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="5" 
+                  required 
+                  placeholder="Write your message here.."></textarea><br><br>
+              
+                <!-- Submit -->
+                <button type="submit">Send</button>
+              </form>
+         </section>
+            <i data-lucide="sun"></i>        
+            <i data-lucide="moon"></i>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <p>Made with 🩵 by Roland Szucs</p>
+    </footer>
+
+<!-- JS -->
+<script>
+    lucide.createIcons();
+  </script>  
+<script src="script.js"></script>
+</body>
+</html>

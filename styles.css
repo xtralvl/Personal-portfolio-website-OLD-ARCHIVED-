@@ -1,0 +1,229 @@
+/* === GLOBAL STYLES === */
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #2c2c2c;
+}
+
+/* === HEADER === */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #1f1f1f; 
+    color: #ffffff; 
+    border-radius: 0 0 3rem 3rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === TITLE === */
+.title {
+    grid-column: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title h1 {
+    margin-bottom: -1.8rem;
+    color: #87cefa; 
+
+}
+
+.title h2 {
+    margin-top: 0;
+}
+
+#logo {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/* === NAVIGATION === */
+nav {
+    grid-column: 3;
+    justify-self: end;
+}
+
+nav a {
+    color: #87cefa;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: #87cefa; 
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* === SECTIONS === */
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1f1f1f;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+hr {
+    width: 60%; 
+    margin: 2rem auto;
+    border: none;
+    border-top: 2px solid #d0d0d0;
+}
+
+
+/* === IMAGES === */
+#portfolio img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#portfolio img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#portfolio img:active {
+    transform: scale(1);
+}
+
+#skills img {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#skills img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 8px rgba(38, 154, 221, 0.6);
+    opacity: 1;
+}
+
+#skills img:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+#skills p {
+    line-height: 0.5;
+}
+
+
+/* === CONTACT FORM === */
+form {
+    max-width: 60%;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #87cefa;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #1f1f1f;
+    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
+}
+
+form button {
+    background-color: #87cefa;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+form button:active {
+    transform: scale(1);
+}
+
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+
