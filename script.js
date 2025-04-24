@@ -11,7 +11,8 @@ const seconds = Math.floor((elapsedTime % 60000) / 1000);
 const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
 const secondText = seconds === 1 ? 'second' : 'seconds'; // Pluralize if necessary
 
-codingTime.textContent = `I've spent ${minutes} minutes and ${formattedSeconds} ${secondText} with coding so far.`;
+codingTime.textContent = `I started to code approximately ${minutes} minutes and ${formattedSeconds} ${secondText} ago.`;
 };
 
 setInterval(updateCounter, 1000);
+
