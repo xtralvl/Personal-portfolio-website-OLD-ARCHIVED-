@@ -1,4 +1,4 @@
-/* === GLOBAL STYLES === */
+/* === LIGHT MODE BODY === */
 html, body {
     text-align: center;
     margin: 0;
@@ -6,7 +6,62 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f7fa;
     color: #2c2c2c;
+    transition: background-color 1s, color 1s;
 }
+
+/* === DARK MODE === */
+html.dark-mode,
+body.dark-mode {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+
+#light.dark-mode {
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+
+#dark.dark-mode {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+body.dark-mode .subtitle {
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+html.dark-mode #skills img,
+body.dark-mode #skills img{
+    filter: invert(100%);
+    transition: box-shadow 0.3s ease;
+}
+
+body.dark-mode #portfolio img {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode #skills img {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+  
 
 /* === HEADER === */
 header {
@@ -81,6 +136,52 @@ nav ul li:hover {
     transform: scale(1.2);
 }
 
+/* === DARK MODE BUTTONS === */
+#modebuttons {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.2rem;
+    margin-right: 8rem;
+    margin-top: 1rem;
+    float: right;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 8rem;
+    background-color: #d7e9f4;
+    
+}
+
+#light {
+    grid-column: 1;
+    justify-self: start;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#dark {
+    grid-column: 2;
+    justify-self: end;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+#light:hover,
+#dark:hover {
+    transform: scale(1.1);
+}
+
+
 /* === SECTIONS === */
 section {
     padding: 3rem 2rem;
@@ -147,6 +248,8 @@ hr {
 #skills img:active {
     transform: scale(1);
     box-shadow: none;
+    box-shadow: 0 8px 8px rgba(38, 154, 221, 0.6);
+
 }
 
 #skills p {
@@ -158,21 +261,19 @@ hr {
 form {
     max-width: 60%;
     margin: 2rem auto;
-    background-color: #ffffff;
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: left;
     font-size: 1.1rem;
+    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
+    border: 2px solid #87cefa;
+
+
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #1f1f1f;
-}
 
+/* Inputs and textareas */
 form input,
 form textarea {
     width: 100%;
@@ -186,6 +287,14 @@ form textarea {
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
+    color: white; /* To make the text visible */
+}
+
+/* When focused */
+form input:focus,
+form textarea:focus {
+    border-color: #1f1f1f;
+    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
 }
 
 form input:focus,
@@ -199,10 +308,11 @@ form button {
     color: #ffffff;
     padding: 0.8rem 2rem;
     font-size: 1.1rem;
-    border: none;
     border-radius: 0.8rem;
     cursor: pointer;
+    border: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    color: black;
 }
 
 form button:hover {
