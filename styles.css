@@ -57,10 +57,6 @@ body.dark-mode #skills img {
     transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
 }
-
-
-
-
   
 
 /* === HEADER === */
@@ -77,6 +73,7 @@ header {
 
 /* === TITLE === */
 .title {
+    
     grid-column: 1;
     font-size: 1.5rem;
     font-weight: bold;
@@ -99,6 +96,17 @@ header {
 }
 
 /* === NAVIGATION === */
+
+#mobile-nav-icon {
+    display: none;
+}
+
+#mobile-nav-list {
+    display: none;
+    margin-bottom: 3rem;
+}
+
+
 nav {
     grid-column: 3;
     justify-self: end;
@@ -129,27 +137,79 @@ nav ul li {
     cursor: pointer;
     transition: color 0.3s ease;
     transition: transform 0.3s ease;
+  
 }
 
 nav ul li:hover {
     color: #ffffff;
     transform: scale(1.2);
+    
 }
+
+nav ul li::before ,
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* distance below text */
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.6s ease; /* smooth underline effect */
+}
+
+nav ul li:hover::before,
+nav ul li:hover::after {
+    width: 50%;
+}
+
+nav ul li::before {
+    left: 0;
+}
+
+nav ul li::after {
+    right: 0;
+}
+
+nav ul li:hover::before {
+    left: 0;
+}
+
+nav ul li:hover::after {
+    right: 0;
+}
+
+/* === UP TO THE TOP ARROW === */
+#arrow {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem; 
+    height: 3rem;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    z-index: 1000;
+}
+
+#arrow:hover {
+    opacity: 0.7;
+    transform: scale(1.6);
+}
+
 
 /* === DARK MODE BUTTONS === */
 #modebuttons {
+    position: sticky;
+    top: 1rem; /* Sticks to 1rem from top when scrolling */
     border: 2px solid black;
     border-radius: 30px;
     padding: 0.2rem;
-    margin-right: 8rem;
+    margin-right: 2rem;
     margin-top: 1rem;
     float: right;
     display: grid;
-    grid-column: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 8rem;
     background-color: #d7e9f4;
-    
 }
 
 #light {
@@ -287,7 +347,7 @@ form textarea {
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
-    color: white; /* To make the text visible */
+    color: rgb(0, 0, 0); /* To make the text visible */
 }
 
 /* When focused */
@@ -334,6 +394,134 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     font-size: 1rem;
+    border-top: 1px solid white;
 }
 
 
+/* === MOBILE === */
+
+@media (max-width: 480px) {
+
+    nav ul {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+      font-size: 0.8rem;
+      
+    }
+
+    .title h2 {
+        margin-top: 1rem;
+    }
+
+    #mobilenav-and-modebuttons {
+        padding: 0 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #mobile-nav-icon {
+        margin-top: -5;
+        display: inline-flex;
+        width: 2rem;
+        height: 2rem;
+        align-self: center;
+    }
+
+    #mobile-nav-icon:visited {
+        transform: scale(1.2);
+        color: white;
+    }
+
+
+    body.dark-mode #mobile-nav-icon {
+        color: #bcdcef;
+    }
+
+    #mobile-nav-list {
+        display: none;
+    }
+
+    #mobile-nav-list ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        padding: 0;
+        margin-bottom: -3rem;
+        font-size: 1.1rem;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #mobile-nav-list ul li {
+        display: inline-block;
+        padding-bottom: 0;
+        color: #87cefa;
+    }
+
+    #mobile-nav-list ul li a {
+        color: black;
+        text-decoration: underline;
+        list-style: none;
+    }
+
+    body.dark-mode #mobile-nav-list ul li a {
+        color: white;
+    }
+
+
+
+
+    #modebuttons {
+        margin-top: 0;
+        display: inline-flex;
+        width: auto;
+        float: left;
+        left: 0.5rem;
+        align-self: center;
+    }    
+
+    #light,
+    #dark {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.2rem
+        }
+
+    #about-me {
+        margin-top: -2rem;
+            
+    }
+
+    #arrow {
+        right: 0.5rem;
+        opacity: 0.5;
+        
+        }
+
+    #arrow:active {
+        opacity: 0.7;
+        transform: scale(0.5);
+    }
+
+    #skills p {
+        line-height: 1.3;
+    }
+
+    form {
+        text-align: center;
+    }
+
+
+}
+  

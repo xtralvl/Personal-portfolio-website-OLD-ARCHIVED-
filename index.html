@@ -35,11 +35,30 @@
  
     <!-- MAIN -->
     <main>
+
+      <section id="mobilenav-and-modebuttons">
         <!-- Dark mode switcher -->
          <div id="modebuttons">
             <i id="light" data-lucide="sun"></i>        
             <i id="dark" data-lucide="moon"></i>
          </div>
+         <!-- MOBILE NAV -->
+         <i data-lucide="align-justify" id="mobile-nav-icon"></i>
+        </section>
+        
+         <!-- To the top arrow -->
+         <i data-lucide="arrow-big-up-dash" id="arrow"></i>
+
+         <!-- MOBILE NAV -->
+         <div id="mobile-nav-list">
+          <ul>
+              <li><a href="#about-me">About Me</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      
         <!-- ABOUT ME -->
         <section>
             <h2 id="about-me" class=subtitle>About Me</h2>
@@ -117,7 +136,7 @@
                   placeholder="Write your message here.."></textarea><br><br>
               
                 <!-- Submit -->
-                <button type="submit">Send</button>
+                <button id='submit' type="submit">Send</button>
               </form>
          </section>
             
