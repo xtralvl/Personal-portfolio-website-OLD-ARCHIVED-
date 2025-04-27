@@ -62,10 +62,10 @@ const mobileNavList = document.getElementById('mobile-nav-list');
 const aboutMe = document.getElementById('about-me');
 
 mobileNavIcon.addEventListener('click', () => {
-    if (mobileNavList.style.display === 'block') {
-        mobileNavList.style.display = 'none'
+    if (mobileNavList.style.display === 'none') {
+        mobileNavList.style.display = 'block'
     } else {
-        mobileNavList.style.display = 'block';
+        mobileNavList.style.display = 'none';
         
     }
 });
