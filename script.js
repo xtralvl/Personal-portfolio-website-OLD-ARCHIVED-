@@ -46,8 +46,7 @@ const darkMode = darkIcon.addEventListener('click', () => {
     icons.style.border = '2px solid #87cefa';
 });
 
-// Scroll to the top arrow //
-
+// Scroll to the top arrow 
 const arrow = document.getElementById('arrow');
 
 arrow.addEventListener('click', () => {
@@ -57,6 +56,30 @@ arrow.addEventListener('click', () => {
     });
 });
 
+window.addEventListener('scroll', () => {
+    const scrolledFromTop = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const totalHeight = document.documentElement.scrollHeight;
+    const distanceFromBottom = totalHeight - (scrolledFromTop + viewportHeight);
+
+    if (window.scrollY > 100) {
+        arrow.style.display = 'block';
+    } else {
+        arrow.style.display = 'none';
+    }
+
+    if (distanceFromBottom < 70) {
+        arrow.style.display = 'block';
+        arrow.style.color = 'white';
+    } else {
+        arrow.style.color = 'black';
+    }
+});
+
+
+
+
+// Mobile nav menu
 const mobileNavIcon = document.getElementById('mobile-nav-icon');
 const mobileNavClose = document.getElementById('mobile-nav-close');
 const mobileNavList = document.getElementById('mobile-nav-list');
