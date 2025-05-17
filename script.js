@@ -1,6 +1,6 @@
 // Coding Time Counter //
 
-const codingTime = document.getElementById("coding-time");
+/* const codingTime = document.getElementById("coding-time");
 const startTime = new Date("2025-01-03T12:00:00");
 
 function updateCounter() {
@@ -15,7 +15,7 @@ const secondText = seconds === 1 ? 'second' : 'seconds'; // Pluralize if necessa
 codingTime.textContent = `I started to code approximately ${days} days,  ${minutes} minutes and ${formattedSeconds} ${secondText} ago.`;
 };
 
-setInterval(updateCounter, 1000);
+setInterval(updateCounter, 1000); */
 
 
 // Dark-Light Mode Switch //
@@ -58,14 +58,20 @@ arrow.addEventListener('click', () => {
 });
 
 const mobileNavIcon = document.getElementById('mobile-nav-icon');
+const mobileNavClose = document.getElementById('mobile-nav-close');
 const mobileNavList = document.getElementById('mobile-nav-list');
-const aboutMe = document.getElementById('about-me');
 
+// Clicking in mobile nav hamburger icon, icon change to X //
 mobileNavIcon.addEventListener('click', () => {
-    if (mobileNavList.style.display === 'none') {
-        mobileNavList.style.display = 'block'
-    } else {
-        mobileNavList.style.display = 'none';
-        
-    }
-});
+mobileNavIcon.style.display = 'none'; // Hamburger disapperars
+  mobileNavClose.style.display = 'inline'; // X appears
+  mobileNavList.style.display = 'block'; // menu elements appears
+})
+
+// Clicking in mobile nav x icon, icon change to hamburger //
+mobileNavClose.addEventListener('click', () => {
+    mobileNavIcon.style.display = 'inline'; // Hamburger appears
+    mobileNavClose.style.display = 'none'; // X disappears
+    mobileNavList.style.display = 'none'; // menu elements disappears
+  });
+

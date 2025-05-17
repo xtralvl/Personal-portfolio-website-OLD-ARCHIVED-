@@ -1,0 +1,23 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "This is my personal website which shows my skills and the portfolio of my projects.",
+  "main": "findMyHat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtralvl/Personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtralvl/Personal-website/issues"
+  },
+  "homepage": "https://github.com/xtralvl/Personal-website#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

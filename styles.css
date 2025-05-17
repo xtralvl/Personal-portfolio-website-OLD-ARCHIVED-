@@ -400,9 +400,9 @@ footer {
 }
 
 
-/* === MOBILE === */
+/* === MOBILE AND TABLET SIZE === */
 
-@media (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 1024px) {
 
     header {
         display: grid;
@@ -462,7 +462,6 @@ footer {
         display: flex;
         justify-content: space-evenly;
         margin-top: 2.5rem;
-        padding: 0;
         margin-bottom: -2.5rem;
         font-size: 1.1rem;
         list-style: none;
@@ -474,27 +473,36 @@ footer {
         display: inline-block;
         padding-bottom: 0;
         color: #87cefa;
-        
+        padding: 1rem;
+        border-radius: 50px;
+        border: 1.5px solid black;
     }
 
     #mobile-nav-list ul li a {
         color: black;
-        text-decoration: underline;
+        text-decoration: none;
         list-style: none;
         
     }
 
-    #mobile-nav-list ul li a:active {
-        color: #87cefa;
+    #mobile-nav-list ul li:active {
+        background-color: #d0e7f5;
     }
 
-    body.dark-mode #mobile-nav-list ul li a:active {
-        color: #87cefa;
+    body.dark-mode #mobile-nav-list ul li {
+        border: 1.5px solid white;
     }
 
     body.dark-mode #mobile-nav-list ul li a {
         color: white;
     }
+
+    body.dark-mode #mobile-nav-list ul li a:active {
+        color: black;
+    }
+
+
+
 
     /* === MOBILE-DARK MODE === */
 
@@ -547,6 +555,13 @@ footer {
         text-align: center;
     }
 
+    body.dark-mode form input:focus,
+    form textarea:focus {
+        background-color: #cbe2ef;
+    }
+    
 
+    
+    
 }
   
