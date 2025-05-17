@@ -366,6 +366,10 @@ hr {
     line-height: 0.5;
 }
 
+#subskills img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
 
 /* === CONTACT FORM === */
 form {
