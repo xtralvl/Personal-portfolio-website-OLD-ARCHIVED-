@@ -36,22 +36,21 @@
     <!-- MAIN -->
     <main>
       <!-- Dark mode switcher -->
-      <div id="modebuttons">
-        <i id="light" data-lucide="sun"></i>        
-        <i id="dark" data-lucide="moon"></i>
+       <div id="buttons-container">
+
+        <div id="modebuttons">
+          <i id="light" data-lucide="sun"></i>        
+          <i id="dark" data-lucide="moon"></i>
+       </div>
+
+        <!-- Small screen NAV -->
+        <div id="smallscreen-nav-icon">
+        <i data-lucide="align-justify" id="smallscreen-nav-open"></i>
      </div>
+         </div>
 
-      <section id="mobilenavicon">
-         <!-- MOBILE NAV -->
-         <i data-lucide="align-justify" id="mobile-nav-icon"></i>
-         <i data-lucide="x" id="mobile-nav-close" style="display: none;"></i>
-      </section>
-        
-         <!-- To the top arrow -->
-         <i data-lucide="arrow-big-up-dash" id="arrow"></i>
-
-         <!-- MOBILE NAV -->
-         <div id="mobile-nav-list">
+         <!-- TABLET NAV -->
+         <div id="smallscreen-nav-list">
           <ul>
               <li><a href="#about-me">About Me</a></li>
               <li><a href="#portfolio">Projects</a></li>
@@ -59,10 +58,13 @@
               <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      
+
+      <!-- To the top arrow -->
+        <i data-lucide="arrow-big-up-dash" id="arrow"></i>
+
         <!-- ABOUT ME -->
         <section>
-            <h2 id="about-me" class=subtitle>About Me</h2>
+            <h2 id="about-me" class="subtitle">About Me</h2>
 
         <!-- LOGO (a pic about me)-->
         <img src="/pics/Screenshot 2025-02-13 at 11.08.44 AM.png" alt="A photo about Roland" id="logo">
@@ -82,7 +84,7 @@
 
         <!-- PORTFOLIO -->
          <section id="portfolio">
-            <h2 class=subtitle>Portfolio</h2>
+            <h2 class="subtitle">Portfolio</h2>
             <p>Here you can find the portfolio of my projects.</p>
             <img src="/pics/el tacito logo.png" alt="El tacito club" title="El tacito club">
             <img src="/pics/dmt logo.png" alt="Daily Mood Tracker" title="Daily Mood Tracker">
@@ -93,21 +95,21 @@
 
         <!-- SKILLS -->
           <section id="skills">
-            <h2 class=subtitle>Skills</h2>
+            <h2 class="subtitle">Skills</h2>
             <p>Here there will be icons of my skills which if will be clicked there will be a description about them.</p>
             <p>Click on each to see the details.</p>
                 <img src="/pics/html logo png.png">
                 <img src="/pics/css logo png.png">
                 <img src="/pics/js logo.png">
                 <img src="pics/git logo.png">
-                <img src="/pics/github logo.png">
-                <img src="/pics/command line.jpg">
-                <img src="/pics/vs code logo.svg">
                 <hr>
                 <div id="subskills">
-                  <h3 class=subtitle>Sub-Skills</h3>
+                  <h3 class="subtitle">Sub-Skills</h3>
                   <p>Here there will be icons of my sub-skills which if will be clicked there will be a description about them.</p>
                   <p>Click on each to see the details.</p>
+                      <img src="/pics/github logo.png">
+                      <img src="/pics/command line.jpg">
+                      <img src="/pics/vs code logo.svg">  
                       <img src="/pics/photoshop-icon.png">
                       <img src="/pics/ms office icon.png">
                       <img src="/pics/jira logo.svg">
@@ -119,7 +121,7 @@
 
         <!-- CONTACT -->  
          <section id="contact">
-            <h2 class=subtitle>Contact</h2>
+            <h2 class="subtitle">Contact</h2>
             <form action="#" method="post">
                 <!-- Name -->
                 <label for="name">Your Name</label><br><br>
@@ -160,7 +162,7 @@
     <footer id="dark-section">
       <div id="contact-details">
         <div> <a href='https://github.com/xtralvl'> <img title="GitHub" alt='github-profile' id="github" src="./pics/github logo.png"> </a></div>
-        <div"> <a href='https://www.linkedin.com/in/roland-szucs-338222273'> <img title="LinkedIn" alt='linkedin-profile'  id="linkedin" src='./pics/Linkedin logo.png'> </a> </div>
+        <div> <a href='https://www.linkedin.com/in/roland-szucs-338222273'> <img title="LinkedIn" alt='linkedin-profile'  id="linkedin" src='./pics/Linkedin logo.png'> </a> </div>
       </div>
         <p id="love">Made with 🩵 by Roland Szucs</p>
     </footer>

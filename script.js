@@ -76,25 +76,30 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Small screen nav list //
+const navIcon = document.getElementById('smallscreen-nav-icon');
+const smallScreenNavList = document.getElementById('smallscreen-nav-list');
 
+navIcon.addEventListener('click', () => {
+    smallScreenNavList.classList.toggle('show');
 
+    if (smallScreenNavList.classList.contains('show')) {
+        navIcon.setAttribute('data-lucide', 'x');
+        navIcon.style.fontSize = '1.5rem'
+        navIcon.style.position = 'absolute';
+        navIcon.style.top = '1rem';
+        navIcon.style.right = '1rem';
+        navIcon.style.color = 'white';
+        
+    } else {
+        // Visszaállítás eredeti állapotra
+        navIcon.setAttribute('data-lucide', 'align-justify');
+        navIcon.style.display = 'block';
+        navIcon.style.position = ''; // vagy 'static', ha az volt eredetileg
+        navIcon.style.top = '';
+        navIcon.style.right = '';
+        navIcon.style.color = '';
+    }
+});
 
-// Mobile nav menu
-const mobileNavIcon = document.getElementById('mobile-nav-icon');
-const mobileNavClose = document.getElementById('mobile-nav-close');
-const mobileNavList = document.getElementById('mobile-nav-list');
-
-// Clicking in mobile nav hamburger icon, icon change to X //
-mobileNavIcon.addEventListener('click', () => {
-mobileNavIcon.style.display = 'none'; // Hamburger disapperars
-  mobileNavClose.style.display = 'inline'; // X appears
-  mobileNavList.style.display = 'block'; // menu elements appears
-})
-
-// Clicking in mobile nav x icon, icon change to hamburger //
-mobileNavClose.addEventListener('click', () => {
-    mobileNavIcon.style.display = 'inline'; // Hamburger appears
-    mobileNavClose.style.display = 'none'; // X disappears
-    mobileNavList.style.display = 'none'; // menu elements disappears
-  });
 
