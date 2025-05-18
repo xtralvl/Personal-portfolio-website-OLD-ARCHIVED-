@@ -9,7 +9,7 @@ html, body {
     transition: background-color 1s, color 1s;
 }
 
-body {
+* {
     overflow-x: hidden;
   }
 
@@ -245,8 +245,6 @@ nav ul li:hover::after {
 /* === DARK MODE BUTTONS === */
 
 #modebuttons {
-    position: sticky;
-    top: 1rem; /* Sticks to 1rem from top when scrolling */
     border: 2px solid black;
     border-radius: 30px;
     padding: 0.2rem;
@@ -456,14 +454,60 @@ footer p {
     font-size: 0.8rem;
 }
 
+/* === TABLET SIZE === */
 
-/* === MOBILE AND TABLET SIZE === */
+@media (max-width: 585px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    header h1 {
+        padding: 1rem !important;
+        font-size: 3rem !important;
+        margin: 1rem 1rem 0 1rem !important;
+
+    }
+
+    header h2 {
+        padding: 0 1rem 1rem 1rem !important;
+        font-size: 2.5rem !important;
+        margin: -2rem 1rem 1rem 1rem !important;
+    }
+}
+
+@media (max-width: 470px) {
+
+    header h1 {
+        font-size: 2.5rem !important;
+    }
+
+    header h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 2rem !important;
+    }
+
+    header h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+
 
 @media (min-width: 0px) and (max-width: 1024px) {
 
     header {
         display: grid;
         grid-template-columns: 1fr;
+        margin-bottom: 0.5rem;
     }
 
     /* === MOBILE-TITLE === */
