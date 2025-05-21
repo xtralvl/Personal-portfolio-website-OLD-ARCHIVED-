@@ -22,19 +22,23 @@
 <p>The website was built using a mobile-first approach and is still under active development.</p>
 <hr>
 
-Technologies and Methods Used:
+<h4>Technologies and Methods Used:</h4>
 
--HTML5
--CSS3
--JavaScript (ES6+)
--Git
--Flexbox & CSS Grid
--Mobile-first responsive design
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>JavaScript (ES6+)</li>
+  <li>Git</li>
+  <li>Flexbox & CSS Grid</li>
+  <li>Mobile-first responsive design</li>
+</ul>
 
-Key Features:
+<h4>Key Features:</h4>
 
--Light/Dark mode toggle
+<ul>
+  <li>Light/Dark mode toggle</li>
+</ul>
+<br>
 
-I manage tasks using Jira and deploy the website through Netlify.
-You can view the live version here:
-👉 https://personalwebsitextralvl.netlify.app/
+<p>I manage tasks using <em>Jira</em> and deploy the website through <em>Netlify</em>.</p>
+<p>You can view the live version <a href="https://personalwebsitextralvl.netlify.app/">here</a></p>
