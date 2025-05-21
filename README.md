@@ -1,29 +1,36 @@
-This is my personal website showcasing my skills and project portfolio.
+This is my personal website, showcasing my skills and project portfolio.
+I began building it in the spring of 2025. As I continue to gain experience and expand my knowledge, I regularly refine and update the site with new features and improvements.
 
-I started building it in the spring of 2025, and as I gain more experience and knowledge, I continuously refine and update it with new features and improvements.
-
-Currently, the site consists of a single page divided into three main sections:
+Currently, the website consists of a single page divided into four main sections:
 
 About Me
+In this section, I share insights about myself, my goals and plans related to programming, how and why I started learning to code, and some background on my past experiences and jobs.
+
 Projects
+This section includes a list of my completed and ongoing projects, along with links to their GitHub repositories and live versions hosted on Netlify.
+
 Skills
+Here I highlight the tools and technologies I’m currently familiar with. This list grows as I continue learning and exploring new methods and frameworks.
+
 Contact Form
+You can use this form to get in touch with me directly.
 
-In the near future, I plan to separate these sections into individual pages.
+In the near future, I plan to separate these sections into individual pages to improve structure and navigation.
+The website was built using a mobile-first approach and is still under active development.
 
-The website was developed with a mobile-first approach and is still a work in progress.
+Technologies and Methods Used:
 
-The tools currently used in this project are :
-HTML5
-CSS3
-JAVASCRIPT(ES6+)
-GIT
+-HTML5
+-CSS3
+-JavaScript (ES6+)
+-Git
+-Flexbox & CSS Grid
+-Mobile-first responsive design
 
-Flexbox and Grid
-Mobile first responsivity
+Key Features:
 
-Features:
-Light-Dark mode switcher
+-Light/Dark mode toggle
 
-I deploy this website to Netlify, you can see this at: https://personalwebsitextralvl.netlify.app/
-
+I manage tasks using Jira and deploy the website through Netlify.
+You can view the live version here:
+👉 https://personalwebsitextralvl.netlify.app/
