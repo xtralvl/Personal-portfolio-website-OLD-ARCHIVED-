@@ -13,5 +13,17 @@ In the near future, I plan to separate these sections into individual pages.
 
 The website was developed with a mobile-first approach and is still a work in progress.
 
-I deplo this website to Netlify, you can see this at: https://personalwebsitextralvl.netlify.app/
+The tools currently used in this project are :
+HTML5
+CSS3
+JAVASCRIPT(ES6+)
+GIT
+
+Flexbox and Grid
+Mobile first responsivity
+
+Features:
+Light-Dark mode switcher
+
+I deploy this website to Netlify, you can see this at: https://personalwebsitextralvl.netlify.app/
 
