@@ -37,6 +37,7 @@
 
 <ul>
   <li>Light/Dark mode toggle</li>
+  <li>Scroll-to-Top button</li>
 </ul>
 <br>
 
