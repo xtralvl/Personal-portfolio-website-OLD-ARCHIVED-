@@ -14,7 +14,6 @@ html, body {
     display: none;
     z-index: 1000;
     transition: all 0.3s ease;
-      
 }
 
 
@@ -23,17 +22,11 @@ html, body {
         
 }
 
-#contact-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#learning img {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
 }
 
-#contact-details img{
- margin: 0 1rem;
- filter: invert(100%);
- opacity: 0.7;
-}
 
 #github {
     width: 3rem;
@@ -377,73 +370,6 @@ hr {
     height: 3rem;
 }
 
-/* === CONTACT FORM === */
-form {
-    max-width: 60%;
-    margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-size: 1.1rem;
-    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
-    border: 2px solid #87cefa;
-
-
-}
-
-
-/* Inputs and textareas */
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid #87cefa;
-    border-radius: 0.8rem;
-    font-size: 1rem;
-    font-family: inherit;
-    resize: vertical;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0); /* To make the text visible */
-}
-
-/* When focused */
-form input:focus,
-form textarea:focus {
-    border-color: #1f1f1f;
-    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #1f1f1f;
-    box-shadow: 0 0 5px rgba(135, 206, 250, 0.6);
-}
-
-form button {
-    background-color: #87cefa;
-    color: #ffffff;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    color: black;
-}
-
-form button:hover {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-form button:active {
-    transform: scale(1);
-}
 
 
 /* === FOOTER === */
@@ -455,11 +381,43 @@ footer {
     margin-top: 2rem;
     font-size: 1rem;
     border-top: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+#contact-details {
+    grid-column: 1 / 3;
+    display: flex;
+    grid-row: 1;
+    justify-content: center;
+}
+
+footer img {
+    filter: invert(100%);
+    margin: 1rem;
+
+}
+
+#github {
+    border: 1px solid red;
+
+}
+
+#linkedin {
+    border: 1px solid red;
+}
+
+
 footer p {
+    grid-column: 1 / 3;
     margin-bottom: 0;
     font-size: 0.8rem;
+    grid-row: 2;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 1px solid red;
+
 }
 
 /* === TABLET and Mobile SIZE === */
@@ -685,16 +643,6 @@ footer p {
         line-height: 1.3;
     }
 
-    /* === Small screen-FORM === */
-
-    form {
-        text-align: center;
-    }
-
-    body.dark-mode form input:focus,
-    form textarea:focus {
-        background-color: #cbe2ef;
-    }
 
     /* === SMALL WIDTHS === */
     
