@@ -12,8 +12,10 @@ html, body {
     background-color: #f5f7fa;
     color: #2c2c2c;
     transition: background-color 1s, color 1s;
-    max-width: 100vw;
+    min-height: 100dvh;
+    max-width: 100dvh;
     overflow-x: hidden;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 
@@ -327,6 +329,7 @@ hr {
 
 /* === FOOTER === */
 footer {
+    position: relative;
     height: 7rem;
     text-align: center;
     background-color: #1f1f1f;
@@ -336,7 +339,8 @@ footer {
     border-top: 1px solid white;
     display: grid;
     grid-template-rows: 85% 15%;
-    gap: 0;
+    margin-bottom: env(saffe-area-inset-bottom);
+
 }
 
 #contact-details {
@@ -469,6 +473,7 @@ nav ul li:hover::after {
     /* === MOBILE NAV LIST === */
 
     @media (min-width: 0px) and (max-width: 550px) {
+
         #smallscreen-nav-icon {
             display: block;
         }
