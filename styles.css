@@ -530,6 +530,10 @@ nav ul li:hover::after {
             
         }
 
+        footer {
+            padding-bottom: 10vh;
+        }
+
     }
 
     /* === TABLET === */
