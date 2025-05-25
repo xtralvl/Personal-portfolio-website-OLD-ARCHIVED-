@@ -41,4 +41,4 @@ The website was built using a mobile-first approach and is still under active de
 
 I manage tasks using *Jira* and deploy the website through *Netlify*.
 
-👉 **You can view the live version [here](https://personalwebsitextralvl.netlify.app/)**.
+👉 **You can view the live version [here](https://roland-szucs-personal-portfolio.netlify.app/)**.
