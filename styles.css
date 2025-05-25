@@ -1,13 +1,22 @@
 /* === LIGHT MODE BODY === */
+
+/* * {
+    outline: 1px solid red;
+} */
+
 html, body {
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f7fa;
     color: #2c2c2c;
     transition: background-color 1s, color 1s;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+
+
 
 #smallscreen-nav-list,
 #smallscreen-nav-icon {
@@ -17,9 +26,10 @@ html, body {
 }
 
 
+
 #about-me {
-    margin-top: -4rem;
-        
+    margin-top: 2rem;
+    margin-bottom: 0.rem;
 }
 
 #learning img {
@@ -27,27 +37,6 @@ html, body {
     height: 2.5rem !important;
 }
 
-
-#github {
-    width: 3rem;
-    transition: 0.3s ease;
-}
-
-#linkedin {
-    width: 3.41rem;
-    transition: 0.3s ease;
-
-}
-
-#github:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-#linkedin:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
 
 
 
@@ -86,18 +75,13 @@ body.dark-mode .subtitle {
 html.dark-mode #skills img,
 body.dark-mode #skills img{
     filter: invert(100%);
-    transition: box-shadow 0.3s ease;
 }
 
 body.dark-mode #portfolio img {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
-    transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
 }
 
 body.dark-mode #skills img {
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
-    transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease;
 }
   
@@ -181,38 +165,6 @@ nav ul li:hover {
     
 }
 
-nav ul li::before ,
-nav ul li::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* distance below text */
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.6s ease; /* smooth underline effect */
-}
-
-nav ul li:hover::before,
-nav ul li:hover::after {
-    width: 50%;
-}
-
-nav ul li::before {
-    left: 0;
-}
-
-nav ul li::after {
-    right: 0;
-}
-
-nav ul li:hover::before {
-    left: 0;
-}
-
-nav ul li:hover::after {
-    right: 0;
-}
-
 /* === UP TO THE TOP ARROW === */
 
 body.dark-mode #arrow  {
@@ -248,7 +200,7 @@ body.dark-mode #arrow  {
     float: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 8rem;
+    width: 6rem;
     background-color: #d7e9f4;
 }
 
@@ -307,9 +259,12 @@ hr {
 }
 
 #portfolio,
-#skills {
-    padding: 0 0 1rem 0;
+#skills,
+#sub-skills,
+#learning {
+    padding: 0;
 }
+
 
 /* === IMAGES === */
 #portfolio img {
@@ -344,14 +299,12 @@ hr {
 
 #skills img:hover {
     transform: scale(1.2);
-    box-shadow: 0 8px 8px rgba(38, 154, 221, 0.6);
     opacity: 1;
 }
 
 #skills img:active {
     transform: scale(1);
     box-shadow: none;
-    box-shadow: 0 8px 8px rgba(38, 154, 221, 0.6);
 
 }
 
@@ -374,16 +327,16 @@ hr {
 
 /* === FOOTER === */
 footer {
+    height: 7rem;
     text-align: center;
     background-color: #1f1f1f;
     color: #ffffff;
-    padding: 1rem;
     margin-top: 2rem;
     font-size: 1rem;
     border-top: 1px solid white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 85% 15%;
+    gap: 0;
 }
 
 #contact-details {
@@ -391,36 +344,80 @@ footer {
     display: flex;
     grid-row: 1;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 footer img {
     filter: invert(100%);
     margin: 1rem;
-
 }
 
 #github {
-    border: 1px solid red;
-
+    width: 3rem;
+    transition: 0.3s ease;
 }
 
 #linkedin {
-    border: 1px solid red;
+    width: 3.41rem;
+    transition: 0.3s ease;
+
 }
 
+#github:hover,
+#linkedin:hover
+ {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#love {
+    display: flex;
+}
 
 footer p {
     grid-column: 1 / 3;
-    margin-bottom: 0;
     font-size: 0.8rem;
     grid-row: 2;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: 1px solid red;
-
+    align-self: end;
 }
 
-/* === TABLET and Mobile SIZE === */
+/* === NAV LIST UNDERSCORE ON BIG SCREEN === */
+@media (min-width: 1300px) {
+
+nav ul li::before ,
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* distance below text */
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.6s ease; /* smooth underline effect */
+}
+
+nav ul li:hover::before,
+nav ul li:hover::after {
+    width: 50%;
+}
+
+nav ul li::before {
+    left: 0;
+}
+
+nav ul li::after {
+    right: 0;
+}
+
+nav ul li:hover::before {
+    left: 0;
+}
+
+nav ul li:hover::after {
+    right: 0;
+}
+
+
+}
 
 
 
@@ -471,7 +468,7 @@ footer p {
 
     /* === MOBILE NAV LIST === */
 
-    @media (min-width: 0px) and (max-width: 768px) {
+    @media (min-width: 0px) and (max-width: 550px) {
         #smallscreen-nav-icon {
             display: block;
         }
@@ -532,11 +529,16 @@ footer p {
 
     /* === TABLET === */
     
-    @media (min-width: 768px) and (max-width: 1024px) {
-        #smallscreen-nav-icon {
-            display: block;
+    @media (min-width: 550px) and (max-width: 1024px) {
+
+        .title h1 {
+            font-size: 3.5rem;
         }
 
+
+        .title h2 {
+            font-size: 2.5rem;
+        }
 
 
         nav ul {
@@ -617,7 +619,6 @@ footer p {
 
     #about-me {
         margin-top: -2rem;
-            
     }
 
     /* === Small screen-TO THE TOP ARROW === */
@@ -689,8 +690,6 @@ footer p {
             font-size: 1.5rem !important;
         }
     }
-    
-    
-    
 }
+
   
