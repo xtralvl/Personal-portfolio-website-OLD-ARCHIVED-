@@ -13,7 +13,7 @@ html, body {
     color: #2c2c2c;
     transition: background-color 1s, color 1s;
     min-height: 100dvh;
-    max-width: 100dvh;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
