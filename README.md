@@ -1,44 +1,46 @@
-# Personal Portfolio Website
+# Personal Portfolio Website (Archived)
 
-## This is my personal website, showcasing my skills and project portfolio.
+⚠️ **Caution:** This is an *archived* version of my early personal portfolio website.  
+I no longer maintain or update this site, but I’ve kept the repository for reference — as a snapshot of my first full website, which I designed and built entirely on my own in early 2025.
 
-I began building it in the spring of 2025.  
-As I continue to gain experience and expand my knowledge, I regularly refine and update the site with new features and improvements.
-
-### Currently, the website consists of a single page divided into four main sections:
-
-#### About Me
-In this section, I share insights about myself, my goals and plans related to programming, how and why I started learning to code, and some background on my past experiences and jobs.
-
-#### Projects
-This section includes a list of my completed and ongoing projects, along with links to their GitHub repositories and live versions hosted on Netlify.
-
-#### Skills
-Here I highlight the tools and technologies I’m currently familiar with. This list grows as I continue learning and exploring new methods and frameworks.
-
-#### Contact Form
-You can use this form to get in touch with me directly.
-
-In the near future, I plan to separate these sections into individual pages to improve structure and navigation.  
-The website was built using a mobile-first approach and is still under active development.
+👉 **My new, actively maintained portfolio site is available here:**  
+**https://your-new-portfolio-link.com**
 
 ---
 
-### Technologies and Methods Used
+## About the Project
 
-- HTML5  
-- CSS3  
-- JavaScript (ES6+)  
-- Git  
-- Flexbox & CSS Grid  
-- Mobile-first responsive design
+This was my first personal website, created to showcase my skills and projects during the beginning of my web development journey.  
+I built it from scratch using a mobile-first approach, and updated it regularly as I progressed.
 
-### Key Features
+### The single-page layout includes four sections:
+
+- **About Me** – Personal background, why I started coding, and my future plans.  
+- **Projects** – Completed and ongoing projects, with links to GitHub and Netlify.  
+- **Skills** – Tools and technologies I learned and used at the time.  
+- **Contact** – Simple form to get in touch directly.
+
+---
+
+## Technologies & Tools
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6+)**  
+- **Git**  
+- **Flexbox & CSS Grid**  
+- **Mobile-first responsive design**  
+- **Netlify** (deployment)  
+- **Jira** (task management)
+
+---
+
+## Key Features
 
 - Light/Dark mode toggle  
-- Scroll-to-Top button
-- Dinamic nav menu display, based on screen size
+- Scroll-to-top button  
+- Dynamic navigation menu (adjusts based on screen size)
 
-I manage tasks using *Jira* and deploy the website through *Netlify*.
+---
 
-👉 **You can view the live version [here](https://roland-szucs-personal-portfolio.netlify.app/)**.
+🟡 *This site represents an early stage of my development career. Although it's no longer updated, it remains a valuable milestone and reference for how I started out.*
