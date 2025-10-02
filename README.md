@@ -3,8 +3,6 @@
 ⚠️ **Caution:** This is an *archived* version of my early personal portfolio website.  
 I no longer maintain or update this site, but I’ve kept the repository for reference — as a snapshot of my first full website, which I designed and built entirely on my own in early 2025.
 
-👉 **My new, actively maintained portfolio site is available here:**  
-**https://your-new-portfolio-link.com**
 
 ---
 
